@@ -1,0 +1,45 @@
+server:
+  port: ${API_GATEWAY_SERVICE_PORT:9191}
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: DOCTOR-SERVICE
+          uri: lb://DOCTOR-SERVICE
+          predicates:
+            - Path=/doctors/**
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/users/**
+        - id: APPOINTMENT-SERVICE
+          uri: lb://APPOINTMENT-SERVICE
+          predicates:
+            - Path=/appointments/**
+            - Path=/users/**
+            - Path=/doctor/**
+        - id: PAYMENT-SERVICE
+          uri: lb://PAYMENT-SERVICE
+          predicates:
+            - Path=/payments/**
+        - id: RATING-SERVICE
+          uri: lb://RATING-SERVICE
+          predicates:
+            - Path=/ratings/**
+        - id: NOTIFICATION-SERVICE
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/notfication/**
+      discovery:
+        enabled: true
+
+eureka:
+  instance:
+    hostname: ${EUREKA_HOST_NAME:localhost}
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST_NAME:localhost}:${EUREKA_HOST_PORT:8761}/eureka/
+
