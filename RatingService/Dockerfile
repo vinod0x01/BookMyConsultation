@@ -1,7 +1,13 @@
+FROM maven:3.6.3-jdk-14 AS builder
+WORKDIR /usr/src/app
+COPY src ./src
+COPY pom.xml .
+RUN mvn clean install -DskipTests
+
 FROM openjdk:14-jdk-alpine
 MAINTAINER vinod
-ADD ./target/rating-service.jar /opt/app/rating-service.jar
-WORKDIR /opt/app
+WORKDIR /usr/app
+COPY --from=builder /usr/src/app/target/rating-service.jar /usr/app/rating-service.jar
 ENV PATH="${PATH}:${JAVA_HOME}/bin"
 EXPOSE 8084
-ENTRYPOINT [ "java", "-jar", "/opt/app/rating-service.jar"]
+ENTRYPOINT [ "java", "-jar", "/usr/app/rating-service.jar"]
