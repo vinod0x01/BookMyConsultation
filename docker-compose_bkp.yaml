@@ -77,8 +77,8 @@ services:
       MYSQL_HOST: bmc-db-1.cb9zqnw5buxr.us-east-1.rds.amazonaws.com
       MYSQL_HOST_PORT: 3306
       MySQL_DATABASE: Consultation
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root@mysql
       MONGO_HOST: ec2-3-81-136-182.compute-1.amazonaws.com
       MONGO_PORT: 27017
       MONGO_DATABASE: bmc
@@ -104,8 +104,8 @@ services:
       MYSQL_HOST: bmc-db-1.cb9zqnw5buxr.us-east-1.rds.amazonaws.com
       MYSQL_HOST_PORT: 3306
       MYSQL_DATABASE: Consultation
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root@mysql
       EUREKA_HOST_NAME: eureka-service
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
@@ -128,8 +128,8 @@ services:
       MYSQL_HOST: bmc-db-1.cb9zqnw5buxr.us-east-1.rds.amazonaws.com
       MYSQL_HOST_PORT: 3306
       MYSQL_DATABASE: Consultation
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root@mysql
       EUREKA_HOST_NAME: eureka-service
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
