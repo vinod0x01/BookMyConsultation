@@ -30,8 +30,8 @@ services:
       MONGO_DATABASE: bmc
       EUREKA_HOST_NAME: eureka-service
       EUREKA_HOST_PORT: 8761
-      S3_ACCESS_KEY: AKIAQ5V4DQNUG6UCGY4P
-      S3_SECRET_KEY: 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
+      S3_ACCESS_KEY: 
+      S3_SECRET_KEY: 
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
       KAFKA_HOST_PORT: 9092
       eureka.client.serviceUrl.defaultZone: http://eurekasvc:8761/eureka/
@@ -56,8 +56,8 @@ services:
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
       KAFKA_HOST_PORT: 9092
-      S3_ACCESS_KEY: AKIAQ5V4DQNUG6UCGY4P
-      S3_SECRET_KEY: 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
+      S3_ACCESS_KEY: 
+      S3_SECRET_KEY: 
       eureka.client.serviceUrl.defaultZone: http://eurekasvc:8761/eureka/
     depends_on:
       - eurekasvc
@@ -78,7 +78,7 @@ services:
       MYSQL_HOST_PORT: 3306
       MySQL_DATABASE: Consultation
       MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_PASSWORD: admin123
       MONGO_HOST: ec2-3-81-136-182.compute-1.amazonaws.com
       MONGO_PORT: 27017
       MONGO_DATABASE: bmc
@@ -105,7 +105,7 @@ services:
       MYSQL_HOST_PORT: 3306
       MYSQL_DATABASE: Consultation
       MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_PASSWORD: admin123
       EUREKA_HOST_NAME: eureka-service
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
@@ -129,7 +129,7 @@ services:
       MYSQL_HOST_PORT: 3306
       MYSQL_DATABASE: Consultation
       MYSQL_USER: admin
-      MYSQL_PASSWORD: upgrad123
+      MYSQL_PASSWORD: admin123
       EUREKA_HOST_NAME: eureka-service
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
@@ -153,8 +153,8 @@ services:
       EUREKA_HOST_PORT: 8761
       KAFKA_HOST: ec2-54-197-113-178.compute-1.amazonaws.com
       KAFKA_HOST_PORT: 9092
-      SES_ACCESSKEY: AKIAQ5V4DQNUG6UCGY4P
-      SES_SECRETKEY: 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
+      SES_ACCESSKEY: 
+      SES_SECRETKEY: 
       SES_FROM_EMAIL: vinod.patil.engineer@gmail.com
       eureka.client.serviceUrl.defaultZone: http://eurekasvc:8761/eureka/
     depends_on:
