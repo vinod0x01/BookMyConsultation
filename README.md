@@ -5,5 +5,5 @@
 
 ## architecture
 
-![architecture svg](./images/architecture.svg)
+![architecture svg](./images/architecture_1.svg)
 <!-- <img src="./images/architecture.svg"> -->
