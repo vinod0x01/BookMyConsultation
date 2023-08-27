@@ -27,3 +27,7 @@
 
 ![architecture svg](./images/architecture_1.svg)
 <!-- <img src="./images/architecture.svg"> -->
+
+## how to setup and run at coelogic.pdf
+
+[CodeLogic.pdf](./CodeLogic.pdf)
