@@ -5,6 +5,15 @@
 ## Tech stack used
 
 * ***Spring boot***
+    * Doctor microservice
+    * User microservice
+    * appointment microservice
+    * payment microservice
+    * rating microservice
+    * notification microservice
+    * api gateway
+    * eureka service discovery
+    
 * ***kafka***
 * ***Mongo DB***
 * ***SQL DATABASE***
@@ -28,6 +37,6 @@
 ![architecture svg](./images/architecture_1.svg)
 <!-- <img src="./images/architecture.svg"> -->
 
-## how to setup and run at coelogic.pdf
+## more details at coelogic.pdf
 
 [CodeLogic.pdf](./CodeLogic.pdf)
